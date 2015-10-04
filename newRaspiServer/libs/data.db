@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Server>
+	<Version counter="168" ip="raelixx.ns0.it" psw="enrico" usr="root">
+<Gpio enable="false">
+      <Pin alarm="true" delay="1000" log="0" name="Rele" number="14" scope="out" use="true"/>
+      <Pin alarm="true" delay="0" log="0" name="Acqua" number="0" scope="out" use="true"/>
+      <Pin alarm="false" delay="0" log="0" name="Pippo" number="3" scope="out" use="true"/>
+      <Pin alarm="false" delay="0" log="0" name="Citofono" number="2" scope="out" use="true"/>
+    </Gpio>
+<Devices enable="true">
+<Slave address="192.168.0.11" baudrate="9600" id="1" name="GaugeMetro" polling="2000" protocol="tcp" type="EnergyMeter">
+<Register address="40001" alarm="false" highAlarm="1000" log="1" lowAlarm="0" name="Vdc" rw="false" scope="gauge"/>
+<Register address="40002" alarm="false" highAlarm="1" log="1" lowAlarm="0" name="Rele1" rw="true" scope="default"/>
+<Register address="40006" alarm="false" highAlarm="1" log="1" lowAlarm="0" name="Rele2" rw="true" scope="default"/>
+<Register address="40004" alarm="false" highAlarm="1" log="1" lowAlarm="0" name="Rele30A" rw="true" scope="out"/>
+</Slave>
+</Devices>
+<Push enable="true">
+	<Information idKey="APA91bHw4Y6RcCjodAKgMltFwTXqIq8l7tWpcPFqJE90ECBjRZlXRnHVBvCdRatgM-JOHd-IG9FCUi-daZbAyiJQq5XiCMywFxvUGLaaeHNyYuUHKUTrJ30_qy0VM9Bok0Rs48k1KRrYgOVQHDu1EUEgaV2LjvFnRqnAFpo4AtvfDtKxecAiPlA" mail="@" telephone="3332233222">Notification: Alert Message!</Information>
+	</Push>
+	</Version>
+</Server>

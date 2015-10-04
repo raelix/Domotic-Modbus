@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">raspiManager</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+ 		<declare-styleable name="Temperature">
+		<attr name="totalNotches" format="integer"/>
+		<attr name="incrementPerLargeNotch" format="integer"/>
+		<attr name="incrementPerSmallNotch" format="integer"/>
+		<attr name="scaleCenterValue" format="integer"/>
+		<attr name="scaleMinValue" format="integer"/>
+		<attr name="scaleMaxValue" format="integer"/>
+		<attr name="scaleColor" format="integer"/>
+		<attr name="scaleUpperTitle" format="string"/>
+		<attr name="scaleLowerTitle" format="string"/>
+	</declare-styleable>
+</resources>

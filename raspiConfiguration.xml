@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Server>
+	<Version counter="0">
+		<Gpio enable="true">
+     <Pin alarm="true" delay="0" log="1" name="Rele" number="14" scope="out" use="true">
+     <Optional name="Camera Rele" type="ipcam">
+     <Data name="ip" value="raelixx.ns0.it:443"/>
+     <Data name="user" value="raelix"/>
+     <Data name="password" value="enrico"/>
+     </Optional> 
+     </Pin>
+      <Pin alarm="false" delay="0" log="0" name="Pippo" number="3" scope="out" use="true">     
+      </Pin>
+      <Pin alarm="false" delay="0" log="0" name="Pippo1" number="2" scope="out" use="true">     
+      </Pin>
+      <Pin alarm="false" delay="0" log="0" name="Pippo2" number="1" scope="out" use="true">     
+      </Pin>
+      <Pin alarm="false" delay="0" log="0" name="Pippo3" number="5" scope="out" use="true">     
+      </Pin>
+     </Gpio>
+<Devices enable="true">
+<Slave address="192.168.0.11" baudrate="9600" debug="true" id="5" name="GaugeMetro" polling="2000" pollingDb="5000" port="502" protocol="tcp" retries="0" timeout="1000" type="EnergyMeter">
+<Register address="40001" alarm="true" highAlarm="2000" log="1" lowAlarm="0" multiplies="1.0" name="Watt_Power" rw="false" scope="gauge">
+</Register>
+<Register address="40002" alarm="true" highAlarm="2000" log="1" lowAlarm="0" multiplies="1.0" name="Watt_Power1" rw="false" scope="default">
+</Register>
+<Register address="40003" alarm="true" highAlarm="2000" log="1" lowAlarm="0" multiplies="1.0" name="Watt_Power2" rw="false" scope="out">
+</Register>
+<Register address="40004" alarm="false" highAlarm="1" log="1" lowAlarm="0" multiplies="1.0" name="cancelloEsterno" rw="true" scope="out">
+	      <Optional name="Camera Rele" type="ipcam">
+     <Data name="ip" value="raelixx.ns0.it:443"/>
+     <Data name="user" value="raelix"/>
+     <Data name="password" value="enrico"/>
+     </Optional> 
+</Register>
+</Slave>
+<Slave address="/dev/ttyAMA0" baudrate="9600" id="3" name="RadioModbus" polling="2000" protocol="rtu" retries="1" timeout="1000" type="EnergyMeter">
+<Register address="40001" alarm="true" highAlarm="20" log="1" lowAlarm="0" multiplies="1.0" name="SunRadiation" rw="false" scope="out">
+	      <Optional name="Camera Rele2" type="ipcam">
+     <Data name="ip" value="raelixx.ns0.it:443"/>
+     <Data name="user" value="raelix"/>
+     <Data name="password" value="enrico"/>
+     </Optional> 
+</Register>
+</Slave>
+</Devices>
+<Push enable="true">
+	<Information idKey="APA91bHw4Y6RcCjodAKgMltFwTXqIq8l7tWpcPFqJE90ECBjRZlXRnHVBvCdRatgM-JOHd-IG9FCUi-daZbAyiJQq5XiCMywFxvUGLaaeHNyYuUHKUTrJ30_qy0VM9Bok0Rs48k1KRrYgOVQHDu1EUEgaV2LjvFnRqnAFpo4AtvfDtKxecAiPlA" mail="@" telephone="3332233222">Notification: Alert Message!</Information>
+	</Push>
+	</Version>
+</Server>

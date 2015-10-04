@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+      android:orientation="vertical"
+    tools:context=".MainActivity$DummySectionFragment" 
+    android:id="@+id/relat">
+
+ 
+    
+<!--  <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/rettangolo" />-->
+<RelativeLayout
+        android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/interno">
+    
+    <TextView
+        android:id="@+id/textView1gpio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"     
+        android:gravity="center"
+        android:text="GPIO"
+        android:textColor="@android:color/white"
+        />
+
+    <ListView
+        android:id="@+id/listviewgpio"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"        
+       android:layout_marginLeft="15dp"
+       android:layout_marginRight="15dp"
+         android:layout_marginBottom="15dp"
+        android:layout_below="@+id/textView1gpio" >
+    </ListView>
+</RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+        android:background="@drawable/ibconfig0">
+    
+<ListView
+    android:id="@+id/listView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/discard"
+    android:layout_alignLeft="@+id/pswText"
+    android:layout_marginBottom="15dp"
+    android:layout_below="@+id/addGpio" >
+
+</ListView>
+
+<Button
+    android:id="@+id/save"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+        style="@style/btnStyleBlackshape"
+            android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    android:text="Save Changes" />
+
+<Button
+    android:id="@+id/discard"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    style="@style/btnStyleBlackshape"
+    android:layout_marginLeft="10dp"
+    android:layout_marginBottom="10dp"
+    android:text="Discard" />
+
+<ImageView
+    android:id="@+id/addGpio"
+    android:layout_width="25dp"
+    android:layout_height="25dp"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="5dp"
+    android:src="@drawable/addgpio" />
+
+<TextView
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:gravity="center"
+    android:text="Gpio Use"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textColor="@android:color/white" />
+
+</RelativeLayout>

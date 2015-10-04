@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="11dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/send" />
+
+    <TextView
+        android:id="@+id/titoloregistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageButton1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="11dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:text="registro"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/valore"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/titoloregistro"
+        android:layout_alignBottom="@+id/titoloregistro"
+        android:layout_marginRight="53dp"
+        android:layout_toLeftOf="@+id/imageButton1"
+        android:background="@drawable/edittext_rect"
+        android:windowSoftInputMode="adjustResize|stateHidden"
+        android:ems="10"
+        android:gravity="center"
+        android:textColor="@android:color/white" />
+  <RelativeLayout
+        android:id="@+id/layoutinterno"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/valore"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

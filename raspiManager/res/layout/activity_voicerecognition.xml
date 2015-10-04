@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/transparent" >
+    <ImageView
+        android:id="@+id/blocco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/rettangolo" />
+<ImageView
+        android:id="@+id/speechact"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/iconrecognition" />
+
+<ListView
+    android:id="@+id/listspeech"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/speechact"
+    android:layout_alignLeft="@+id/blocco"
+    android:layout_alignRight="@+id/blocco"
+    android:layout_alignTop="@+id/blocco" >
+
+</ListView>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<Server>
+	<Version counter="0">
+<Gpio enable="false">
+<Pin number="0" use="true" scope="out" name="rele" delay="0" log="0">0</Pin>
+<Pin number="1" use="true" scope="in" name="pir sensor" delay="0" log="0">1</Pin>
+</Gpio>
+<Devices enable="true">
+<!--<Slave id="1" protocol="rtu" address="COM2" baudrate="9600" polling="2000" type="EnergyMeter" name="GaugeMetro">
+<Register address="40001" name="Idc" scope="SimpleValue" log="0" rw="false"/>
+<Register address="40002" name="Pac" scope="Gauge" log="0" rw="false"/>
+</Slave>-->
+<Slave id="1" protocol="tcp" address="192.168.0.9" baudrate="9600" polling="2000" type="EnergyMeter" name="GaugeMetro">
+<Register address="40001" name="Vdc" scope="SimpleValue" log="0" rw="false"/>
+<Register address="40002" name="Rele" scope="in" log="0" rw="true"/>
+</Slave>
+</Devices>
+<Push enable="true" >
+	<Information telephone="3332233222" mail="@" idKey="" >Notification: Alert Message!</Information>
+	</Push>
+	</Version>
+</Server>

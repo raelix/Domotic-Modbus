@@ -1,0 +1,221 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity$DummySectionFragment" >
+
+
+    <TextView
+        android:id="@+id/textConfig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:text="Configurazione"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/usrText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/hostText"
+        android:layout_below="@+id/hostText"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Username:"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/pswText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/usrText"
+        android:layout_below="@+id/usrText"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Password:"
+        android:textColor="@android:color/white"/>
+
+    <EditText
+        android:id="@+id/hostValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/hostText"
+        android:layout_alignBottom="@+id/hostText"
+        android:layout_alignLeft="@+id/textConfig"
+        android:layout_alignRight="@+id/imageView12"
+        android:layout_marginLeft="47dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/edittext_rect"
+        android:ems="10"
+        android:gravity="center"
+        android:textColor="@android:color/white"/>
+
+    <EditText
+        android:id="@+id/usrValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/usrText"
+        android:layout_alignBottom="@+id/hostText"
+        android:layout_alignLeft="@+id/textConfig"
+        android:layout_alignRight="@+id/imageView12"
+        android:layout_marginLeft="47dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/edittext_rect"
+        android:ems="10"
+        android:gravity="center"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/pswValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pswText"
+        android:layout_alignBottom="@+id/pswText"
+        android:layout_alignLeft="@+id/textConfig"
+        android:layout_alignRight="@+id/imageView12"
+       android:inputType="textPassword"
+        android:layout_marginLeft="47dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/edittext_rect"
+        android:ems="10"
+        android:gravity="center"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/versionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textConfig"
+        android:layout_alignRight="@+id/imageView12"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="Version:"
+        android:textColor="@android:color/white"
+         />
+
+    <TextView
+        android:id="@+id/gpioEnableText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pswText"
+        android:layout_below="@+id/pswValue"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Gpio Used:"
+        android:textColor="@android:color/white"
+         />
+
+    <TextView
+        android:id="@+id/hostText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView12"
+        android:layout_below="@+id/textConfig"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="Host:"
+        android:textColor="@android:color/white"
+         />
+
+    <CheckBox
+        android:id="@+id/gpioEnableValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/gpioEnableText"
+        android:layout_alignBottom="@+id/gpioEnableText"
+        android:layout_alignRight="@+id/pswValue"
+        android:layout_toRightOf="@+id/textConfig"
+        android:button="@drawable/checkbox_sabbia"
+        android:scaleX="0.5"
+        android:scaleY="0.5" />
+
+    <TextView
+        android:id="@+id/deviceUse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gpioEnableText"
+        android:layout_below="@+id/gpioEnableText"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Device Use:"
+        android:textColor="@android:color/white"
+         />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/deviceUse"
+        android:layout_alignBottom="@+id/deviceUse"
+        android:layout_alignRight="@+id/pswValue"
+        android:layout_toRightOf="@+id/textConfig"
+        android:button="@drawable/checkbox_sabbia"
+        android:scaleX="0.5"
+        android:scaleY="0.5" />
+
+   <!--   <Button
+        android:id="@+id/button1"
+        style="@style/btnStyleBlackshape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pswValue"
+        android:layout_alignRight="@+id/imageButton1"
+        android:layout_below="@+id/checkBox1"
+        android:layout_marginTop="16dp"
+        android:text="Manage SLAVE" />-->
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/idKey"
+        android:layout_alignBottom="@+id/idKey"
+        android:layout_alignLeft="@+id/button2"
+        android:gravity="center"
+        android:text="idKEY:"
+        android:textColor="@android:color/white"
+         />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/btnStyleBlackshape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/idKey"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/idKey"
+        android:text="Save Changes" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/btnStyleBlackshape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/deviceUse"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/idKey"
+        android:text="Check Update" />
+
+    <Button
+        android:id="@+id/idKey"
+        style="@style/btnStyleBlackshape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/checkBox1"
+        android:layout_below="@+id/checkBox1"
+        android:layout_marginTop="25dp"
+        android:text="Reset Push Notify" />
+<!-- 
+    <Button
+        android:id="@+id/imageButton1"
+        style="@style/btnStyleBlackshape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/gpioEnableValue"
+        android:layout_centerVertical="true"
+        android:text="Manage GPIO" /> -->
+
+</RelativeLayout>

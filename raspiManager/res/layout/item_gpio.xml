@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true" >
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="45dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/rettangolo" />
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView12"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="GPIO"
+        android:textColor="@android:color/white"
+        />
+
+    <TextView
+        android:id="@+id/ScopeText"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView12"
+        android:layout_below="@+id/nameValue"
+        android:background="@drawable/wheel_val"
+        android:gravity="center"
+        android:text="Scope"
+        android:textColor="@android:color/white"
+        />
+
+    <kankan.wheel.widget.WheelView
+        android:id="@+id/ScopeValue"
+        android:layout_width="64dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/imageView12"
+        android:layout_below="@+id/ScopeText"
+        android:layout_weight="1.5" />
+
+    <TextView
+        android:id="@+id/NumberText"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameValue"
+        android:layout_toRightOf="@+id/ScopeText"
+        android:background="@drawable/wheel_val"
+        android:gravity="center"
+        android:text="Number"
+        android:textColor="@android:color/white"
+        />
+
+    <kankan.wheel.widget.WheelView
+        android:id="@+id/NumberValue"
+        android:layout_width="64dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/NumberText"
+        android:layout_toRightOf="@+id/ScopeText"
+        android:layout_weight="1.5" />
+
+    <TextView
+        android:id="@+id/AlarmText"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameValue"
+        android:layout_toRightOf="@+id/NumberText"
+        android:background="@drawable/wheel_val"
+        android:gravity="center"
+        android:text="Alarm"
+        android:textColor="@android:color/white"
+        />
+
+    <kankan.wheel.widget.WheelView
+        android:id="@+id/AlarmValue"
+        android:layout_width="64dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/AlarmText"
+        android:layout_toRightOf="@+id/NumberValue"
+        android:layout_weight="1.5" />
+
+    <TextView
+        android:id="@+id/LogText"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameValue"
+        android:layout_toRightOf="@+id/AlarmText"
+        android:background="@drawable/wheel_val"
+        android:gravity="center"
+        android:text="Log"
+        android:textColor="@android:color/white"
+        />
+
+    <kankan.wheel.widget.WheelView
+        android:id="@+id/LogValue"
+        android:layout_width="64dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/LogText"
+        android:layout_toRightOf="@+id/AlarmValue"
+        android:layout_weight="1.5" />
+
+    <TextView
+        android:id="@+id/DelayText"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imageView12"
+        android:layout_below="@+id/nameValue"
+        android:layout_toRightOf="@+id/LogText"
+        android:background="@drawable/wheel_val"
+        android:gravity="center"
+        android:text="Delay"
+        android:textColor="@android:color/white"
+        />
+
+    <kankan.wheel.widget.WheelView
+        android:id="@+id/DelayValue"
+        android:layout_width="64dp"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/imageView12"
+        android:layout_below="@+id/DelayText"
+        android:layout_toRightOf="@+id/LogValue"
+        android:layout_weight="1.5" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/imageView12"
+        android:layout_alignTop="@+id/nameValue"
+        android:gravity="center_vertical"
+        android:text="Nome:"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/nameValue"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignRight="@+id/imageView12"
+        android:layout_below="@+id/nameText"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/edittext_rect"
+        android:ems="10"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>
